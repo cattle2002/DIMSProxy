@@ -10,3 +10,8 @@ proxy/
 !/lib/config.json
 /handle/bus.go
 /algo/libalgo.db
+/public.pub
+/product_info.db
+/private.key
+/product_log.db
+/cert.db

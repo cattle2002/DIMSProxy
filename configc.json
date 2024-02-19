@@ -13,7 +13,7 @@
   "User": "zcl01",
   "Password": "zcl123456",
   "CurrentDir": "D:\\workdir\\DIMSProxy",
-  "IDentity": "Slave",
+  "IDentity": "Master",
   "LoggerLevel": "trace",
   "NoConsole": false
  }
