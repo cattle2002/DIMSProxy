@@ -1,11 +1,12 @@
 .idea/*
-calog/*
+calog
 algolib.db
 log/*.log
-minio-connection.go
 go.mod
 go.sum
-proxy/*.go
+proxy/
 /lib/*
 !/lib/libca.dll
 !/lib/config.json
+/handle/bus.go
+/algo/libalgo.db
