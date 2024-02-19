@@ -65,6 +65,8 @@ config.json 是监管程序的配置
 ```
 
 configc.json是证书程序的配置
+
+```
 {
  "PlatformUrl": "ws://47.108.61.229:9081/api/websocket/1(这是你的必填项)",
  "KeyPair": {
@@ -85,11 +87,13 @@ configc.json是证书程序的配置
   "NoConsole": false
  }
 }
+```
 
 ### 4.自行编译
 
 1.
 
+```
 编译监管程序
 [windows]go build  -o server.exe  main.go (依赖当前目录下的libca.dll,当前lib/*作废)
 [linux]go build  -o server  main.go(依赖当前目录下的libca.so,当前lib/*作废)
@@ -99,6 +103,7 @@ configc.json是证书程序的配置
 3.提供给数据引擎(go & qt)的库
 [windows] go  build -o  libca.dll -buildmode=c-shared  main_lib.go
 [linux] go  build -o  libca.so -buildmode=c-shared  main_lib.go
+```
 
 ### 5.使用编译好了的二进制程序
 
