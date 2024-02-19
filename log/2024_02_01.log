@@ -1,0 +1,138 @@
+INFO [2024-02-01 15:12:35.431] 数据产品表初始化成功                                    FILE="product.go:42" FUNC=OpenPInfo
+INFO [2024-02-01 15:12:35.435] 数据产品使用日志表初始化成功                                FILE="productlog.go:75" FUNC=OpenPLog
+INFO [2024-02-01 15:12:35.435] 监管服务启动地址:127.0.0.1:5518                       FILE="main.go:68" FUNC=run
+ERROR[2024-02-01 15:12:35.436] 加载证书动态库错误:The specified module could not be found.  FILE="main.go:57" FUNC=invoke
+INFO [2024-02-01 15:12:35.529] 连接核心服务器成功                                     FILE="connect.go:23" FUNC=Connect
+TRACE[2024-02-01 15:12:35.530] send  msg:GDMP0160DslQrSbGJC1BfCMEb61YTNs+Sn7CqVRWrAv5MKU+WeAVHvENXrQUbs4JccvwzPyiso4SrjL/89E11z/LThkO17G6ZT2xUNfxnNj0z4ywCV35Aw2imvImALjcFhhIeihDOg2qJPvpHe+dJDL9XJ9JHovzBOXIqTrq  FILE="login.go:34" FUNC=login
+INFO [2024-02-01 15:12:38.539] 管理服务启动地址：192.168.1.107:5520/api/v1/websocket/1  FILE="watch.go:39" FUNC=WatcherRun
+INFO [2024-02-01 15:12:38.539] read coreserver msg:{"ErrorMsg":"执行成功","Payload":{"ID":800,"TimeStamp":1706771555555},"Cmd":"LoginRet","Program":"Monitor","RetCode":0}  FILE="busx.go:38" FUNC=Reader
+TRACE[2024-02-01 15:12:38.540] 监管登录返回：{LoginRet Monitor 0 执行成功 {800 1706771555555}}  FILE="busx.go:56" FUNC=Reader
+INFO [2024-02-01 15:12:45.278] Ctrl +C                                       FILE="main.go:39" FUNC=ctrlc
+INFO [2024-02-01 15:13:40.003] 数据产品表初始化成功                                    FILE="product.go:42" FUNC=OpenPInfo
+INFO [2024-02-01 15:13:40.004] 数据产品使用日志表初始化成功                                FILE="productlog.go:75" FUNC=OpenPLog
+INFO [2024-02-01 15:13:40.005] 监管服务启动地址:127.0.0.1:5518                       FILE="main.go:68" FUNC=run
+INFO [2024-02-01 15:13:40.029] 打开证书库成功                                       FILE="cert.go:23" FUNC=func1
+INFO [2024-02-01 15:13:40.086] 连接核心服务器成功                                     FILE="connect.go:23" FUNC=Connect
+TRACE[2024-02-01 15:13:40.087] send  msg:GDMP0160DslQrSbGJC1BfCMEb61YTNs+Sn7CqVRWrAv5MKU+WeAVHvENXrQUbs4JccvwzPyi+AGyGAtzVLy3WHXwSdh2NsXnR8KkCXhwswH1BXLu1kt5qbtRxVsH/ZuC5bz0lAGIfedOH61bQnolTuHSqvpToJrwr+i0v7gU  FILE="login.go:34" FUNC=login
+INFO [2024-02-01 15:13:43.088] read coreserver msg:{"ErrorMsg":"执行成功","Payload":{"ID":922,"TimeStamp":1706771620111},"Cmd":"LoginRet","Program":"Monitor","RetCode":0}  FILE="busx.go:38" FUNC=Reader
+INFO [2024-02-01 15:13:43.088] 管理服务启动地址：192.168.1.107:5520/api/v1/websocket/1  FILE="watch.go:39" FUNC=WatcherRun
+TRACE[2024-02-01 15:13:43.088] 监管登录返回：{LoginRet Monitor 0 执行成功 {922 1706771620111}}  FILE="busx.go:56" FUNC=Reader
+INFO [2024-02-01 15:18:14.013] 数据产品表初始化成功                                    FILE="product.go:42" FUNC=OpenPInfo
+INFO [2024-02-01 15:18:14.017] 数据产品使用日志表初始化成功                                FILE="productlog.go:75" FUNC=OpenPLog
+INFO [2024-02-01 15:18:14.018] 监管服务启动地址:127.0.0.1:5518                       FILE="main.go:68" FUNC=run
+INFO [2024-02-01 15:18:14.020] 打开证书库成功                                       FILE="cert.go:23" FUNC=func1
+INFO [2024-02-01 15:18:14.098] 连接核心服务器成功                                     FILE="connect.go:23" FUNC=Connect
+TRACE[2024-02-01 15:18:14.099] send  msg:GDMP0160DslQrSbGJC1BfCMEb61YTNs+Sn7CqVRWrAv5MKU+WeAVHvENXrQUbs4JccvwzPyihrmFUw00jMz4c3BgaWKIAmeWhMITkxk0Zf4uL7N72OJWIvX1MDWsnTf0p40tkYAilggbKakZK6gYC64kUOMUUTN9yBRntd39  FILE="login.go:34" FUNC=login
+INFO [2024-02-01 15:18:17.101] read coreserver msg:{"ErrorMsg":"执行成功","Payload":{"ID":742,"TimeStamp":1706771894124},"Cmd":"LoginRet","Program":"Monitor","RetCode":0}  FILE="busx.go:38" FUNC=Reader
+INFO [2024-02-01 15:18:17.101] 管理服务启动地址：192.168.1.107:5520/api/v1/websocket/1  FILE="watch.go:39" FUNC=WatcherRun
+TRACE[2024-02-01 15:18:17.102] 监管登录返回：{LoginRet Monitor 0 执行成功 {742 1706771894124}}  FILE="busx.go:56" FUNC=Reader
+INFO [2024-02-01 15:18:54.954] 数据产品表初始化成功                                    FILE="product.go:42" FUNC=OpenPInfo
+INFO [2024-02-01 15:18:54.955] 数据产品使用日志表初始化成功                                FILE="productlog.go:75" FUNC=OpenPLog
+INFO [2024-02-01 15:18:54.956] 打开证书库成功                                       FILE="cert.go:30" FUNC=OpenCert
+INFO [2024-02-01 15:18:54.956] 监管服务启动地址:127.0.0.1:5518                       FILE="main.go:68" FUNC=run
+INFO [2024-02-01 15:18:55.043] 连接核心服务器成功                                     FILE="connect.go:23" FUNC=Connect
+TRACE[2024-02-01 15:18:55.043] send  msg:GDMP0160DslQrSbGJC1BfCMEb61YTNs+Sn7CqVRWrAv5MKU+WeAVHvENXrQUbs4JccvwzPyiEi5kkQ5+j45hGCfn4W18sClqoZoxDZJotQ/pydJb8WUTx5FyxHihQTgw9zNfMYnWYCqaNviI9UCl8LpE/r9CZHfKP/jdzoVK  FILE="login.go:34" FUNC=login
+INFO [2024-02-01 15:18:58.043] 管理服务启动地址：192.168.1.107:5520/api/v1/websocket/1  FILE="watch.go:39" FUNC=WatcherRun
+INFO [2024-02-01 15:18:58.043] read coreserver msg:{"ErrorMsg":"执行成功","Payload":{"ID":868,"TimeStamp":1706771935069},"Cmd":"LoginRet","Program":"Monitor","RetCode":0}  FILE="busx.go:38" FUNC=Reader
+TRACE[2024-02-01 15:18:58.044] 监管登录返回：{LoginRet Monitor 0 执行成功 {868 1706771935069}}  FILE="busx.go:56" FUNC=Reader
+INFO [2024-02-01 15:19:26.786] 数据产品表初始化成功                                    FILE="product.go:42" FUNC=OpenPInfo
+INFO [2024-02-01 15:19:26.790] 数据产品使用日志表初始化成功                                FILE="productlog.go:75" FUNC=OpenPLog
+INFO [2024-02-01 15:19:26.790] 监管服务启动地址:127.0.0.1:5518                       FILE="main.go:68" FUNC=run
+INFO [2024-02-01 15:19:26.792] 打开证书库成功                                       FILE="cert.go:23" FUNC=func1
+INFO [2024-02-01 15:19:26.876] 连接核心服务器成功                                     FILE="connect.go:23" FUNC=Connect
+TRACE[2024-02-01 15:19:26.877] send  msg:GDMP0160DslQrSbGJC1BfCMEb61YTNs+Sn7CqVRWrAv5MKU+WeAVHvENXrQUbs4JccvwzPyiFGXLvNh6F+daD8uYf/+OsScAjjN84hea2Tzew08HE3+zu6aaQLGBy8BfZI5Oo3/oYqIk+RiY9723RjuAhSYxUv232wbkAPuP  FILE="login.go:34" FUNC=login
+INFO [2024-02-01 15:19:29.886] 管理服务启动地址：192.168.1.107:5520/api/v1/websocket/1  FILE="watch.go:39" FUNC=WatcherRun
+INFO [2024-02-01 15:19:29.886] read coreserver msg:{"ErrorMsg":"执行成功","Payload":{"ID":558,"TimeStamp":1706771966902},"Cmd":"LoginRet","Program":"Monitor","RetCode":0}  FILE="busx.go:38" FUNC=Reader
+TRACE[2024-02-01 15:19:29.886] 监管登录返回：{LoginRet Monitor 0 执行成功 {558 1706771966902}}  FILE="busx.go:56" FUNC=Reader
+INFO [2024-02-01 16:30:01.132] product info db file ini  success             FILE="product.go:38" FUNC=OpenPInfo
+INFO [2024-02-01 16:30:01.136] product log db file ini success               FILE="productlog.go:72" FUNC=OpenPLog
+INFO [2024-02-01 16:30:01.136] 监管服务启动地址:127.0.0.1:5518                       FILE="main.go:68" FUNC=run
+INFO [2024-02-01 16:30:01.137] open ca success                               FILE="cert.go:23" FUNC=func1
+INFO [2024-02-01 16:30:01.224] 连接核心服务器成功                                     FILE="connect.go:23" FUNC=Connect
+TRACE[2024-02-01 16:30:01.225] send  msg:GDMP0160DslQrSbGJC1BfCMEb61YTNs+Sn7CqVRWrAv5MKU+WeAVHvENXrQUbs4JccvwzPyi8C9SWPVVPSmWrHbEOYNXUXzXI/6iKmNMzF80bqxodM4F2csgQDVbfhAtSb1ySmT1X+u51A/riBvhJs84y8+dlOpVwz9Qfbcu  FILE="login.go:34" FUNC=login
+INFO [2024-02-01 16:30:04.239] read coreserver msg:{"ErrorMsg":"执行成功","Payload":{"ID":601,"TimeStamp":1706776201265},"Cmd":"LoginRet","Program":"Monitor","RetCode":0}  FILE="busx.go:36" FUNC=Reader
+TRACE[2024-02-01 16:30:04.239] 监管登录返回：{LoginRet Monitor 0 执行成功 {601 1706776201265}}  FILE="busx.go:54" FUNC=Reader
+INFO [2024-02-01 16:30:04.239] 管理服务启动地址：192.168.1.107:5520/api/v1/websocket/1  FILE="watch.go:39" FUNC=WatcherRun
+INFO [2024-02-01 16:31:06.916] product info db file ini  success             FILE="product.go:38" FUNC=OpenPInfo
+INFO [2024-02-01 16:31:06.918] product log db file ini success               FILE="productlog.go:72" FUNC=OpenPLog
+INFO [2024-02-01 16:31:06.918] open ca success                               FILE="cert.go:30" FUNC=OpenCert
+INFO [2024-02-01 16:31:06.918] 监管服务启动地址:127.0.0.1:5518                       FILE="main.go:68" FUNC=run
+INFO [2024-02-01 16:31:07.002] 连接核心服务器成功                                     FILE="connect.go:23" FUNC=Connect
+TRACE[2024-02-01 16:31:07.002] send  msg:GDMP0160DslQrSbGJC1BfCMEb61YTNs+Sn7CqVRWrAv5MKU+WeAVHvENXrQUbs4JccvwzPyi4vNwPWVEqDTgnzsJwxxvL/722KVNVyWGhjoMNYWI8uwkO08tLtT8G52Yb7PRIFkD0mEfku61/lNa8FQ1FRcvjkWtk6ZfbnhA  FILE="login.go:34" FUNC=login
+INFO [2024-02-01 16:31:10.008] 管理服务启动地址：192.168.1.107:5520/api/v1/websocket/1  FILE="watch.go:39" FUNC=WatcherRun
+INFO [2024-02-01 16:31:10.008] read coreserver msg:{"ErrorMsg":"执行成功","Payload":{"ID":818,"TimeStamp":1706776267043},"Cmd":"LoginRet","Program":"Monitor","RetCode":0}  FILE="busx.go:36" FUNC=Reader
+TRACE[2024-02-01 16:31:10.009] 监管登录返回：{LoginRet Monitor 0 执行成功 {818 1706776267043}}  FILE="busx.go:54" FUNC=Reader
+TRACE[2024-02-01 16:36:10.016] 正在保活...                                       FILE="loop.go:39" FUNC=func1
+INFO [2024-02-01 16:36:10.062] read coreserver msg:{"ErrorMsg":"执行成功","Payload":{"ID":847,"TimeStamp":1706776570062},"Cmd":"KeepRet","Program":"Monitor","RetCode":0}  FILE="busx.go:36" FUNC=Reader
+TRACE[2024-02-01 16:41:10.030] 正在保活...                                       FILE="loop.go:39" FUNC=func1
+INFO [2024-02-01 16:41:10.076] read coreserver msg:{"ErrorMsg":"执行成功","Payload":{"ID":801,"TimeStamp":1706776870077},"Cmd":"KeepRet","Program":"Monitor","RetCode":0}  FILE="busx.go:36" FUNC=Reader
+TRACE[2024-02-01 16:46:10.040] 正在保活...                                       FILE="loop.go:39" FUNC=func1
+INFO [2024-02-01 16:46:10.086] read coreserver msg:{"ErrorMsg":"执行成功","Payload":{"ID":521,"TimeStamp":1706777170088},"Cmd":"KeepRet","Program":"Monitor","RetCode":0}  FILE="busx.go:36" FUNC=Reader
+TRACE[2024-02-01 16:51:10.052] 正在保活...                                       FILE="loop.go:39" FUNC=func1
+INFO [2024-02-01 16:51:10.113] read coreserver msg:{"ErrorMsg":"执行成功","Payload":{"ID":627,"TimeStamp":1706777470117},"Cmd":"KeepRet","Program":"Monitor","RetCode":0}  FILE="busx.go:36" FUNC=Reader
+TRACE[2024-02-01 16:56:10.081] 正在保活...                                       FILE="loop.go:39" FUNC=func1
+INFO [2024-02-01 16:56:10.126] read coreserver msg:{"ErrorMsg":"执行成功","Payload":{"ID":826,"TimeStamp":1706777770130},"Cmd":"KeepRet","Program":"Monitor","RetCode":0}  FILE="busx.go:36" FUNC=Reader
+INFO [2024-02-01 16:58:47.185] product info db file ini  success             FILE="product.go:38" FUNC=OpenPInfo
+INFO [2024-02-01 16:58:47.186] product log db file ini success               FILE="productlog.go:72" FUNC=OpenPLog
+INFO [2024-02-01 16:58:47.187] open cert.db success                          FILE="cert.go:30" FUNC=OpenCert
+INFO [2024-02-01 16:58:47.187] 监管服务启动地址:127.0.0.1:5518                       FILE="main.go:68" FUNC=run
+INFO [2024-02-01 16:58:47.271] 连接核心服务器成功                                     FILE="connect.go:23" FUNC=Connect
+TRACE[2024-02-01 16:58:47.272] send  msg:GDMP0160DslQrSbGJC1BfCMEb61YTNs+Sn7CqVRWrAv5MKU+WeAVHvENXrQUbs4JccvwzPyinoZbx+ZSJitJBGzLN/kP3IWTZitzDYS0ZDFC+fVndc+YdDhOqxDJuw5CBOnlA3fBqMFUoLmynMsk/PI/lIPDpplQSgliy/3+  FILE="login.go:34" FUNC=login
+INFO [2024-02-01 16:58:50.280] manager service run addr：192.168.1.107:5520/api/v1/websocket/1  FILE="watch.go:39" FUNC=WatcherRun
+INFO [2024-02-01 16:58:50.280] read coreserver msg:{"ErrorMsg":"执行成功","Payload":{"ID":707,"TimeStamp":1706777927319},"Cmd":"LoginRet","Program":"Monitor","RetCode":0}  FILE="busx.go:36" FUNC=Reader
+TRACE[2024-02-01 16:58:50.281] 监管登录返回：{LoginRet Monitor 0 执行成功 {707 1706777927319}}  FILE="busx.go:54" FUNC=Reader
+INFO [2024-02-01 17:01:01.154] product info db file ini  success             FILE="product.go:38" FUNC=OpenPInfo
+INFO [2024-02-01 17:01:01.154] product log db file ini success               FILE="productlog.go:72" FUNC=OpenPLog
+INFO [2024-02-01 17:01:01.155] open cert.db success                          FILE="cert.go:30" FUNC=OpenCert
+INFO [2024-02-01 17:01:01.156] monitor run addr:127.0.0.1:5518               FILE="main.go:68" FUNC=run
+INFO [2024-02-01 17:01:01.235] connect coreServer success                    FILE="connect.go:21" FUNC=Connect
+TRACE[2024-02-01 17:01:01.236] send  login msg:GDMP0160DslQrSbGJC1BfCMEb61YTNs+Sn7CqVRWrAv5MKU+WeAVHvENXrQUbs4JccvwzPyi3yh+4wq3ZRZgxHVJxiDRQRpBIk+9Q4Bc/z/oeL0HL0FYQ1QsJxAHAX1NveJK6kXAW3QjBDte7RRUf00wgBIJkr9jMU2kyjvg  FILE="login.go:34" FUNC=login
+INFO [2024-02-01 17:01:04.250] manager service run addr：192.168.1.107:5520/api/v1/websocket/1  FILE="watch.go:39" FUNC=WatcherRun
+INFO [2024-02-01 17:01:04.250] read coreserver msg:{"ErrorMsg":"执行成功","Payload":{"ID":986,"TimeStamp":1706778061283},"Cmd":"LoginRet","Program":"Monitor","RetCode":0}  FILE="busx.go:36" FUNC=Reader
+TRACE[2024-02-01 17:01:04.251] monitor login return：{LoginRet Monitor 0 执行成功 {986 1706778061283}}  FILE="busx.go:54" FUNC=Reader
+INFO [2024-02-01 17:02:07.246] product info db file ini  success             FILE="product.go:38" FUNC=OpenPInfo
+INFO [2024-02-01 17:02:07.248] product log db file ini success               FILE="productlog.go:72" FUNC=OpenPLog
+INFO [2024-02-01 17:02:07.249] open cert.db success                          FILE="cert.go:30" FUNC=OpenCert
+INFO [2024-02-01 17:02:07.249] monitor run addr:127.0.0.1:5518               FILE="main.go:68" FUNC=run
+INFO [2024-02-01 17:02:07.331] connect coreServer success                    FILE="connect.go:21" FUNC=Connect
+TRACE[2024-02-01 17:02:07.332] send  login msg:GDMP0160DslQrSbGJC1BfCMEb61YTNs+Sn7CqVRWrAv5MKU+WeAVHvENXrQUbs4JccvwzPyix3CV8akjyPOarDzud7xvATci8zvEiphxsJ4Q7B5zchJLnZ4GgOd9oy/Ah+cOqtwNWk6JAvcGMPVllahwpXOUec1/RLaMPIyc  FILE="login.go:34" FUNC=login
+INFO [2024-02-01 17:02:10.339] manager service run addr：192.168.1.107:5520/api/v1/websocket/1  FILE="watch.go:39" FUNC=WatcherRun
+INFO [2024-02-01 17:02:10.339] read coreserver msg:{"ErrorMsg":"执行成功","Payload":{"ID":788,"TimeStamp":1706778127378},"Cmd":"LoginRet","Program":"Monitor","RetCode":0}  FILE="busx.go:36" FUNC=Reader
+INFO [2024-02-01 17:04:08.009] product info db file ini  success             FILE="product.go:38" FUNC=OpenPInfo
+INFO [2024-02-01 17:04:08.010] product log db file ini success               FILE="productlog.go:72" FUNC=OpenPLog
+INFO [2024-02-01 17:04:08.010] open cert.db success                          FILE="cert.go:30" FUNC=OpenCert
+INFO [2024-02-01 17:04:08.010] monitor  service run addr:127.0.0.1:5518      FILE="main.go:68" FUNC=run
+INFO [2024-02-01 17:04:08.104] connect coreServer success                    FILE="connect.go:21" FUNC=Connect
+TRACE[2024-02-01 17:04:08.105] send  login msg:GDMP0160DslQrSbGJC1BfCMEb61YTNs+Sn7CqVRWrAv5MKU+WeAVHvENXrQUbs4JccvwzPyiuiB4YMe98sdJyPYAOaHjuGr2XWDRYV6k3rSmNq7UgWzOPD9uhFE/DNRMIQE+5+29ljthuCMH8V5Qvcey25NbgeYsOSha9V8q  FILE="login.go:34" FUNC=login
+INFO [2024-02-01 17:04:27.346] product info db file ini  success             FILE="product.go:38" FUNC=OpenPInfo
+INFO [2024-02-01 17:04:27.348] product log db file ini success               FILE="productlog.go:72" FUNC=OpenPLog
+INFO [2024-02-01 17:04:27.348] open cert.db success                          FILE="cert.go:30" FUNC=OpenCert
+INFO [2024-02-01 17:04:27.348] monitor  service run addr:127.0.0.1:5518      FILE="main.go:68" FUNC=run
+INFO [2024-02-01 17:04:27.429] connect coreServer success                    FILE="connect.go:21" FUNC=Connect
+TRACE[2024-02-01 17:04:27.430] send  login msg:GDMP0160DslQrSbGJC1BfCMEb61YTNs+Sn7CqVRWrAv5MKU+WeAVHvENXrQUbs4JccvwzPyibOITNoaHHyKGtxjFNqFmjoPAIzxf9DcCIZb0GRW950UswfU2RI1Cv9FloM3qCqjzNj0YfaCpcb2sFjkbHoeqg2D4KcnLwyOT  FILE="login.go:34" FUNC=login
+INFO [2024-02-01 17:04:30.441] manager service run addr：192.168.1.107:5520/api/v1/websocket/1  FILE="watch.go:39" FUNC=WatcherRun
+INFO [2024-02-01 17:04:30.441] read coreserver msg:{"ErrorMsg":"执行成功","Payload":{"ID":844,"TimeStamp":1706778267478},"Cmd":"LoginRet","Program":"Monitor","RetCode":0}  FILE="busx.go:36" FUNC=Reader
+INFO [2024-02-01 17:07:11.327] product info db file ini  success             FILE="product.go:38" FUNC=OpenPInfo
+INFO [2024-02-01 17:07:11.330] product log db file ini success               FILE="productlog.go:72" FUNC=OpenPLog
+INFO [2024-02-01 17:07:11.330] open cert.db success                          FILE="cert.go:30" FUNC=OpenCert
+INFO [2024-02-01 17:07:11.330] monitor  service run addr:127.0.0.1:5518      FILE="main.go:68" FUNC=run
+INFO [2024-02-01 17:07:11.427] connect coreServer success                    FILE="connect.go:21" FUNC=Connect
+TRACE[2024-02-01 17:07:11.427] send  login msg:GDMP0160DslQrSbGJC1BfCMEb61YTNs+Sn7CqVRWrAv5MKU+WeAVHvENXrQUbs4JccvwzPyiYv8njyv2tqzSGaalG9Eq2/LbLmUoz1f/8yLzxpDs8sinxN7jw/1YkGHNQot446lL/bTwfHfewfbvc78ABRDV4dUdPoqpzIrm  FILE="login.go:34" FUNC=login
+INFO [2024-02-01 17:07:14.441] manager service run addr：192.168.1.107:5520/api/v1/websocket/1  FILE="watch.go:39" FUNC=WatcherRun
+INFO [2024-02-01 17:07:14.441] read coreserver msg:{"ErrorMsg":"执行成功","Payload":{"ID":756,"TimeStamp":1706778431475},"Cmd":"LoginRet","Program":"Monitor","RetCode":0}  FILE="busx.go:36" FUNC=Reader
+INFO [2024-02-01 17:09:01.946] product info db file ini  success             FILE="product.go:38" FUNC=OpenPInfo
+INFO [2024-02-01 17:09:01.947] product log db file ini success               FILE="productlog.go:72" FUNC=OpenPLog
+INFO [2024-02-01 17:09:01.947] open cert.db success                          FILE="cert.go:30" FUNC=OpenCert
+INFO [2024-02-01 17:09:01.948] ***monitor  service run addr***:127.0.0.1:5518  FILE="main.go:68" FUNC=run
+INFO [2024-02-01 17:09:02.044] connect coreServer success                    FILE="connect.go:21" FUNC=Connect
+TRACE[2024-02-01 17:09:02.044] send  login msg:GDMP0160DslQrSbGJC1BfCMEb61YTNs+Sn7CqVRWrAv5MKU+WeAVHvENXrQUbs4JccvwzPyi3titqELImLZtsMJmM0ZoqEJ+oI13Yi+kw5GgIJu3RGwfZUeWoYZpm/MXk9VxhwrMKoOEN9Cu+3/WhXp3o8tAJw0g+rjoF0SN  FILE="login.go:34" FUNC=login
+INFO [2024-02-01 17:09:05.050] read coreserver msg:{"ErrorMsg":"执行成功","Payload":{"ID":767,"TimeStamp":1706778542092},"Cmd":"LoginRet","Program":"Monitor","RetCode":0}  FILE="busx.go:36" FUNC=Reader
+INFO [2024-02-01 17:09:05.050] ***manager service run addr***：192.168.1.107:5520/api/v1/websocket/1  FILE="watch.go:39" FUNC=WatcherRun
+INFO [2024-02-01 17:09:47.631] product info db file ini  success             FILE="product.go:38" FUNC=OpenPInfo
+INFO [2024-02-01 17:09:47.632] product log db file ini success               FILE="productlog.go:72" FUNC=OpenPLog
+INFO [2024-02-01 17:09:47.633] open cert.db success                          FILE="cert.go:30" FUNC=OpenCert
+INFO [2024-02-01 17:09:47.633] ***************************************monitor  service run addr***:127.0.0.1:5518  FILE="main.go:68" FUNC=run
+INFO [2024-02-01 17:09:47.711] connect coreServer success                    FILE="connect.go:21" FUNC=Connect
+TRACE[2024-02-01 17:09:47.712] send  login msg:GDMP0160DslQrSbGJC1BfCMEb61YTNs+Sn7CqVRWrAv5MKU+WeAVHvENXrQUbs4JccvwzPyi6RqCSAxEI1RrwOqGjzpytVebUNBCpxED0hXjKI8DyoDes13l2VvgRpCf5yHk0WvuKKGDIPfpse7PvdNY3TZz41dMXW7d7cjT  FILE="login.go:34" FUNC=login
+INFO [2024-02-01 17:09:50.728] *******************************************manager service run addr：192.168.1.107:5520/api/v1/websocket/1  FILE="watch.go:39" FUNC=WatcherRun
+INFO [2024-02-01 17:09:50.728] read coreserver msg:{"ErrorMsg":"执行成功","Payload":{"ID":715,"TimeStamp":1706778587761},"Cmd":"LoginRet","Program":"Monitor","RetCode":0}  FILE="busx.go:36" FUNC=Reader

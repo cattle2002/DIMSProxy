@@ -1,0 +1,16 @@
+INFO [2024-01-26 16:25:01.596] 数据产品表初始化成功                                    FILE="product.go:42" FUNC=OpenPInfo
+INFO [2024-01-26 16:25:01.597] 数据产品使用日志表初始化成功                                FILE="productlog.go:75" FUNC=OpenPLog
+INFO [2024-01-26 16:25:01.598] 打开证书库成功                                       FILE="cert.go:42" FUNC=OpenCert
+INFO [2024-01-26 16:25:09.990] Ctrl +C                                       FILE="main.go:36" FUNC=ctrlc
+INFO [2024-01-26 16:26:00.396] 数据产品表初始化成功                                    FILE="product.go:42" FUNC=OpenPInfo
+INFO [2024-01-26 16:26:00.397] 数据产品使用日志表初始化成功                                FILE="productlog.go:75" FUNC=OpenPLog
+INFO [2024-01-26 16:26:00.398] 打开证书库成功                                       FILE="cert.go:42" FUNC=OpenCert
+INFO [2024-01-26 16:26:02.212] Ctrl +C                                       FILE="main.go:36" FUNC=ctrlc
+INFO [2024-01-26 16:26:54.530] 数据产品表初始化成功                                    FILE="product.go:42" FUNC=OpenPInfo
+INFO [2024-01-26 16:26:54.531] 数据产品使用日志表初始化成功                                FILE="productlog.go:75" FUNC=OpenPLog
+INFO [2024-01-26 16:26:54.531] 打开证书库成功                                       FILE="cert.go:42" FUNC=OpenCert
+INFO [2024-01-26 16:26:55.716] Ctrl +C                                       FILE="main.go:36" FUNC=ctrlc
+INFO [2024-01-26 16:27:12.507] 数据产品表初始化成功                                    FILE="product.go:42" FUNC=OpenPInfo
+INFO [2024-01-26 16:27:12.509] 数据产品使用日志表初始化成功                                FILE="productlog.go:75" FUNC=OpenPLog
+INFO [2024-01-26 16:27:12.509] 打开证书库成功                                       FILE="cert.go:42" FUNC=OpenCert
+INFO [2024-01-26 16:27:14.236] Ctrl +C                                       FILE="main.go:36" FUNC=ctrlc
