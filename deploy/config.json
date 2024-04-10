@@ -1,0 +1,33 @@
+{
+ "PlatformUrl": "ws://192.168.1.102:9081/api/websocket/1",
+ "KeyPair": {
+  "AutoConfig": false,
+  "Algorithm": "rsa",
+  "Bits": 2048,
+  "PublicKeyPath": "public.pub",
+  "PrivateKeyPath": "private.key"
+ },
+ "Local": {
+  "Host": "127.0.0.1",
+  "Port": 5518,
+  "CertPort": 5517,
+  "User": "zcl01",
+  "Password": "zcl123456",
+  "CurrentDir": "D:\\workdir\\DIMSProxy",
+  "Version": "Monitor@v20231203",
+  "ManagerServicePort": 5520,
+  "EthHost": "192.168.1.104",
+  "LoggerLevel": "trace",
+  "NoConsole": false
+ },
+ "Minio": {
+  "LifeDay": 1,
+  "EndPoint": "47.108.20.64:9000",
+  "AccessKeyID": "g5fMoJm1xGdBSbgMrDpw",
+  "SecretAccessKey": "XdIi8sUQSqMR0k1XD1VDtpxOc0ECmWpkT6vnXkFI",
+  "UseSSL": false,
+  "ProductBucket": "product",
+  "ProductUpload": "productdownload",
+  "OfflineProductDataEncrypt": "offlineproductdataencrypt"
+ }
+}

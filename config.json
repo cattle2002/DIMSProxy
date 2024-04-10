@@ -1,5 +1,5 @@
 {
- "PlatformUrl": "ws://47.108.61.229:9081/api/websocket/1",
+ "PlatformUrl": "ws://47.108.75.134:9081/api/websocket/1",
  "KeyPair": {
   "AutoConfig": false,
   "Algorithm": "rsa",
@@ -16,7 +16,7 @@
   "CurrentDir": "D:\\workdir\\DIMSProxy",
   "Version": "Monitor@v20231203",
   "ManagerServicePort": 5520,
-  "EthHost": "192.168.1.100",
+  "EthHost": "10.10.254.18",
   "LoggerLevel": "trace",
   "NoConsole": false
  },

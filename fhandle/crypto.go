@@ -6,6 +6,8 @@ import (
 	"encoding/hex"
 	"encoding/json"
 	"errors"
+	"github.com/tjfoc/gmsm/sm2"
+	"github.com/tjfoc/gmsm/x509"
 	"github.com/wenzhenxi/gorsa"
 
 	"github.com/wumansgy/goEncrypt/aes"
@@ -55,4 +57,37 @@ func PTBSCFiled(ptbsc *PTBSC) (string, int64, string, string, string, error) {
 		return "", 0, "", "", "", errors.New("PTBSC is nil")
 	}
 	return ptbsc.Pwd, ptbsc.TimeStamp, ptbsc.Buyer, ptbsc.Seller, ptbsc.ContentMD5, nil
+}
+func Sm2DecryptC(sk string, data []byte, hexKey string) (string, error) {
+	decodeString, err := hex.DecodeString(string(data))
+	if err != nil {
+		return "", err
+	}
+	tmpKey, err := hex.DecodeString(hexKey)
+	if err != nil {
+		return "", err
+	}
+	privateKey, err := x509.ReadPrivateKeyFromPem([]byte(sk), tmpKey)
+	if err != nil {
+		return "", err
+	}
+	decrypt, err := sm2.Decrypt(privateKey, decodeString, sm2.C1C3C2)
+	if err != nil {
+		return "", err
+	} else {
+		//toString := string(decrypt)
+		toString := base64.StdEncoding.EncodeToString(decrypt)
+		return toString, nil
+	}
+}
+func AsymmetricKeyEncryptDecrypt(algo string, sk string, cipherData string, hexStoreKey string) ([]byte, error) {
+	if algo != "rsa" && algo != "sm2" {
+		return nil, errors.New("no algo  support")
+	}
+	if algo == "rsa" {
+		decrypt, err := gorsa.PriKeyDecrypt(cipherData, sk)
+		return []byte(decrypt), err
+	}
+	c, err := Sm2DecryptC(sk, []byte(cipherData), hexStoreKey)
+	return []byte(c), err
 }

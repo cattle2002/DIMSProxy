@@ -67,7 +67,7 @@ func AlgoGetListFunc() (string, error) {
 	}
 	// defer util.CloseLibrary(libc)
 	defer func() {
-		if cerr := util.CloseLibrary(libc); cerr != nil {
+		if err := util.CloseLibrary(libc); err != nil {
 			log.Logger.Errorf("close algo lib error:%s", err.Error())
 		}
 	}()

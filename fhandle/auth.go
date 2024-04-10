@@ -15,8 +15,6 @@ import (
 	"errors"
 	"fmt"
 	"time"
-
-	"github.com/cattle2002/easycrypto/ecrypto"
 )
 
 type PTBSC struct {
@@ -64,17 +62,27 @@ func CalcPlusPermission(request *protocol.HttpCalcRequest) (*protocol.HttpCalcRe
 		}
 	}
 	if request.Payload.ProductType == Off {
-
+		//处理授权信息
+		//pem, err := config.GetPrivateKeyPem()
+		//if err != nil {
+		//	return nil, err
+		//}
+		//encryptDecrypt, err := AsymmetricKeyEncryptDecrypt("rsa", pem, request.Payload.CipherSymmetricKey, "")
+		//if err != nil {
+		//	return nil, err
+		//}
+		//log.Logger.Tracef("----------------------------解密成功:%s", encryptDecrypt)
 		var res protocol.HttpCalcResponse
 		plus, err := file.DownloadPlus(request.Payload.ProductUrl)
 		if err != nil {
 			return nil, err
 		}
 
-		decrypt, err := ecrypto.AesDecrypt(plus, []byte("0000000000000000"), []byte("0000000000000000"))
-		if err != nil {
-			return nil, err
-		}
+		//decrypt, err := ecrypto.AesDecrypt(plus, []byte("0000000000000000"), []byte("0000000000000000"))
+		//if err != nil {
+		//	return nil, err
+		//}
+		decrypt := plus
 		err = file.UploadBinary(context.Background(), config.Conf.Minio.ProductUpload, request.Payload.ProductName, bytes.NewReader(decrypt), int64(len(decrypt)))
 		if err != nil {
 			return nil, err

@@ -7,6 +7,9 @@ import (
 	"github.com/sirupsen/logrus"
 )
 
+// var Logger *logrus.Logger
+// var NoConsole bool
+// var LoggerLevel string
 var Logger *logrus.Logger
 
 func NewLogger() {
