@@ -1,5 +1,5 @@
 {
- "PlatformUrl": "ws://47.108.75.134:9081/api/websocket/1",
+ "PlatformUrl": "ws://10.10.1.52:9081/api/websocket/1",
  "KeyPair": {
   "AutoConfig": false,
   "Algorithm": "rsa",
@@ -11,20 +11,20 @@
   "Host": "127.0.0.1",
   "Port": 5518,
   "CertPort": 5517,
-  "User": "zcl01",
-  "Password": "zcl123456",
+  "User": "admin",
+  "Password": "admin123",
   "CurrentDir": "D:\\workdir\\DIMSProxy",
   "Version": "Monitor@v20231203",
   "ManagerServicePort": 5520,
-  "EthHost": "10.10.254.18",
+  "EthHost": "10.10.254.22",
   "LoggerLevel": "trace",
   "NoConsole": false
  },
  "Minio": {
   "LifeDay": 1,
-  "EndPoint": "47.108.20.64:9000",
-  "AccessKeyID": "g5fMoJm1xGdBSbgMrDpw",
-  "SecretAccessKey": "XdIi8sUQSqMR0k1XD1VDtpxOc0ECmWpkT6vnXkFI",
+  "EndPoint": "10.10.1.52:9000",
+  "AccessKeyID": "minioadmin",
+  "SecretAccessKey": "minioadmin",
   "UseSSL": false,
   "ProductBucket": "product",
   "ProductUpload": "productdownload",

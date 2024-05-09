@@ -34,7 +34,6 @@ func DownloadBinary(ctx context.Context, bucketName string, objectName string) (
 }
 
 func UploadBinary(ctx context.Context, bucketName string, objectName string, reader io.Reader, objectSize int64) error {
-
 	_, err := MinioClient.PutObject(ctx, bucketName, objectName, reader, objectSize, minio.PutObjectOptions{})
 	if err != nil {
 		log.Logger.Errorf("Upload Error:%s", err.Error())
@@ -46,6 +45,7 @@ func UploadBinary(ctx context.Context, bucketName string, objectName string, rea
 	expire := config.Conf.Minio.LifeDay * 24 * 60 * 60
 	info.CleanTime = time.Now().Add(time.Duration(expire) * time.Second).Unix()
 	CleanCh <- &info
+
 	return err
 }
 

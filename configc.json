@@ -1,5 +1,5 @@
 {
- "PlatformUrl": "ws://47.108.75.134:9081/api/websocket/1",
+ "PlatformUrl": "ws://10.10.1.52:9081/api/websocket/1",
  "KeyPair": {
   "AutoConfig": false,
   "Algorithm": "rsa",
@@ -12,8 +12,8 @@
   "Host": "127.0.0.1",
   "EthHost": "127.0.0.1",
   "Port": 5517,
-  "User": "zcl01",
-  "Password": "zcl123456",
+  "User": "admin",
+  "Password": "admin123",
   "CurrentDir": "D:\\workdir\\DIMSProxy",
   "IDentity": "Master",
   "LoggerLevel": "trace",

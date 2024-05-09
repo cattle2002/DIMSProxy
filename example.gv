@@ -1,0 +1,27 @@
+digraph {
+"config.Config" -> { "config.KeyPair" "config.Local" "config.Minio" };
+"main.AlgoModel" -> { "time.Time" };
+"main.AlgoLogModel" -> { "time.Time" };
+"manager.CertListRes" -> { "manager.CertListResPayload" };
+"model.CertModel" -> { "gorm.Model" };
+"protocol.KeepLiveReq" -> { "protocol.KeepLiveReqPayload" };
+"protocol.LoginReq" -> { "protocol.LoginReqPayload" };
+"protocol.LoginRes" -> { "protocol.LoginResPayload" };
+"protocol.MonitorProductReq" -> { "protocol.MonitorProductReqPayload" };
+"protocol.MonitorProductRes" -> { "protocol.MonitorProductResPayload" };
+"protocol.LimitReq" -> { "protocol.LimitReqPayload" };
+"protocol.LimitResPayload" -> { "protocol.LimitResDetail" };
+"protocol.LimitRes" -> { "protocol.LimitResPayload" };
+"protocol.LocalCanUseSyncReq" -> { "protocol.LocalCanUseSyncReqPayload" };
+"protocol.LocalCanUseSyncRes" -> { "protocol.LocalCanUseSyncResPayload" };
+"protocol.AlgoUseRes" -> { "protocol.AlgoUseResPayload" };
+"protocol.HttpLoginReq" -> { "protocol.User" };
+"protocol.HttpCalcResponsePayload" -> { "protocol.byte" };
+"protocol.HttpCalcResponse" -> { "protocol.HttpCalcResponsePayload" };
+"protocol.HttpCalcRequest" -> { "protocol.HttpCalcRequestPayload" };
+"protocol.HttpOfflineEncryptRes" -> { "protocol.HttpOfflineEncryptResData" };
+"protocol.CertShowRes" -> { "protocol.CertShowResPayload" };
+"protocol.DataGetRes" -> { "protocol.DataPayload" };
+"util.ConfigM" -> { "util.KeyPairM" "util.LocalM" "util.MinioM" };
+"util.ConfigCA" -> { "util.KeyPairCA" "util.LocalCA" };
+}

@@ -118,6 +118,7 @@ type AlgoUseResPayload struct {
 	HaveData bool   `json:"HaveData"`
 	Data     string `json:"Data"`
 	Url      string `json:"Url"`
+	Type     string `json:"Type"`
 }
 type AlgoUseRes struct {
 	Cmd  string            `json:"Cmd"`

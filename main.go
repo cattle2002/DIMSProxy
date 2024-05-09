@@ -9,12 +9,14 @@ import (
 	"DIMSProxy/model"
 	"DIMSProxy/service"
 	"DIMSProxy/util"
-	"github.com/ebitengine/purego"
 	"net/http"
+	_ "net/http/pprof"
 	"os"
 	"os/signal"
 	"strconv"
 	"time"
+
+	"github.com/ebitengine/purego"
 )
 
 func init() {
@@ -87,6 +89,9 @@ func main() {
 	go manager.UdpListen()
 	//go proxy.Run()
 	go ctrlc()
+	go func() {
+		http.ListenAndServe("localhost:6060", nil)
+	}()
 	////go handle.WsSend()
 	//batchLog, s, _ := model.FindBatchLog(94)
 	//log.Logger.Infof("记录----------------------------：%v:%v", batchLog, s)

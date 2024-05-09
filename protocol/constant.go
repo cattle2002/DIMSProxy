@@ -29,6 +29,7 @@ const (
 	OffEncrypt      = "OffEncrypt"
 	OffEncryptRet   = "OffEncryptRet"
 	AlgoList        = "AlgoList"
+	AlgoRegister    = "AlgoRegister"
 	HttpAlgoListRet = "AlgoListRet"
 	Use             = "Use"
 	UseRet          = "UseRet"

@@ -53,7 +53,6 @@ func AlgoRegisterFunc(algoJson string) (string, error) {
 	seconds := int(duration.Seconds())
 	log.Logger.Tracef("invoke AlgoRegister spend time:%d 秒", seconds)
 	return rs, nil
-
 }
 func AlgoGetListFunc() (string, error) {
 	log.Logger.Trace("begin invoke AlgoGetList API")

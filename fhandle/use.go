@@ -8,6 +8,7 @@ import (
 	"github.com/gorilla/websocket"
 	"io"
 	"net/http"
+	"strings"
 )
 
 func Use(req protocol.AlgoUseReq) {
@@ -32,10 +33,18 @@ func Use(req protocol.AlgoUseReq) {
 		log.Logger.Errorf("AlgoExecuteFunc Error:%s", err.Error())
 		return
 	}
+	//create, _ := os.Create("use.txt")
+	//reader := strings.NewReader(executeFunc)
+	//io.Copy(create, reader)
+	header := "==========================此数据已经被算法处理==========================\n"
+	split := strings.Split(executeFunc, header)
+
+	res.Cmd = protocol.UseRet
 	res.Code = protocol.FSuccessCode
 	res.Msg = protocol.FSuccessMsg
 	res.Data.HaveData = true
-	res.Data.Data = executeFunc
+	res.Data.Data = split[1]
+	res.Data.Type = "json"
 	marshal, _ := json.Marshal(res)
 	err = FrontConn.WriteMessage(websocket.TextMessage, marshal)
 	if err != nil {

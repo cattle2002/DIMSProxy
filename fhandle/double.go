@@ -9,7 +9,9 @@ import (
 	"DIMSProxy/util"
 	"bytes"
 	"context"
+	"crypto/md5"
 	"encoding/base64"
+	"encoding/hex"
 	"errors"
 	"fmt"
 	"time"
@@ -39,7 +41,9 @@ func NeedDouble(request *protocol.HttpCalcRequest) (*protocol.HttpCalcResponse, 
 	if request.Payload.NeedDecrypt {
 		//sellerPk := request.Payload.SellerKey
 		sellerPk, _ := GetUserPublicKey(request)
-
+		sum := md5.Sum([]byte(sellerPk))
+		toString := hex.EncodeToString(sum[:])
+		log.Logger.Tracef("seller pk md5:%s", toString)
 		ptbsc, err = AsymmetricDecryptDoublePlus(sellerPk, sk, request.Payload.CipherSymmetricKey)
 		if err != nil {
 			log.Logger.Errorf("double  key decrypt error:%s", err.Error())

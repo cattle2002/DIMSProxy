@@ -32,3 +32,16 @@ func AlgoList() {
 		return
 	}
 }
+func AlgoRegister() {
+	a := "{\"Name\":\"算法名称\",\"Type\":\"EXE\",\"FilePath\":\"D:\\\\workdir\\\\DIMSProxy\\\\algo\\\\algo3.exe\",\"StartupCmd\":\"\",\"ExeInputEOF\":\"\",\"MaxExecTime\":20,\"InputExample\":\"\",\"AlgoFuncName\":\"\",\"Parameters\":\"\",\"CreatedAt\":\"0001-01-01T00:00:00Z\"}"
+	registerFunc, err := algo.AlgoRegisterFunc(a)
+	if err != nil {
+		log.Logger.Errorf("return forntend algo list error:%s", err.Error())
+		return
+	}
+	err = FrontConn.WriteMessage(websocket.TextMessage, []byte(registerFunc))
+	if err != nil {
+		log.Logger.Errorf("return forntend algo list error:%s", err.Error())
+		return
+	}
+}

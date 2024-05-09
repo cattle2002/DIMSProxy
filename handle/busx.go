@@ -20,7 +20,6 @@ func Reader() {
 		if WsStatusBool == false {
 			continue
 		}
-
 		_, p, err := WsConn.ReadMessage()
 		if err != nil {
 			WsStatusBool = false

@@ -71,6 +71,9 @@ func loopReader() {
 		if cmd == protocol.AlgoList {
 			fhandle.AlgoList()
 		}
+		if cmd == protocol.AlgoRegister {
+			fhandle.AlgoRegister()
+		}
 		if cmd == protocol.Use {
 			var req protocol.AlgoUseReq
 			err := json.Unmarshal(p, &req)

@@ -1,6 +1,7 @@
 package fhandle
 
 import (
+	"DIMSProxy/log"
 	"DIMSProxy/protocol"
 	"encoding/base64"
 	"encoding/hex"
@@ -38,11 +39,13 @@ func SymmtricKeyDecryptPlus(data string, algo string, key string) (string, error
 func AsymmetricDecryptDoublePlus(pk string, sk string, cipherHexSymmetricKey string) (*PTBSC, error) {
 	decrypt, err := gorsa.PublicDecrypt(cipherHexSymmetricKey, pk)
 	if err != nil {
+		log.Logger.Errorf("pk decrypt error:%s", err.Error())
 		return nil, err
 	}
 
 	publicDecrypt, err := gorsa.PriKeyDecrypt(decrypt, sk)
 	if err != nil {
+		log.Logger.Errorf("sk decrypt error:%s", err.Error())
 		return nil, err
 	}
 	var res PTBSC
