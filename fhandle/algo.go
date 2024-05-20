@@ -8,6 +8,29 @@ import (
 	"github.com/gorilla/websocket"
 )
 
+func AlgoListX() {
+	var res protocol.AlgoListRes
+	res.Cmd = protocol.HttpAlgoListRet
+	//res.Cmd = protocol.Algo
+	res.Code = protocol.FSuccessCode
+	res.Msg = protocol.FSuccessMsg
+	type algo struct {
+		Name string
+	}
+	algos := make([]algo, 0)
+	var a algo
+	a.Name = "数据分析求均值,峰值,总值算法"
+	algos = append(algos, a)
+	bytes, _ := json.Marshal(algos)
+
+	res.Data = string(bytes)
+	marshal, _ := json.Marshal(res)
+	err := FrontConn.WriteMessage(websocket.TextMessage, marshal)
+	if err != nil {
+		log.Logger.Errorf("return forntend algo list error:%s", err.Error())
+		return
+	}
+}
 func AlgoList() {
 	listFunc, err := algo.AlgoGetListFunc()
 	if err != nil {

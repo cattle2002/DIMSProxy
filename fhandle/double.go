@@ -14,6 +14,7 @@ import (
 	"encoding/hex"
 	"errors"
 	"fmt"
+	"strings"
 	"time"
 )
 
@@ -92,6 +93,25 @@ func NeedDouble(request *protocol.HttpCalcRequest) (*protocol.HttpCalcResponse, 
 			if err != nil {
 				log.Logger.Errorf("create product  use log to db error:%s", err.Error())
 			}
+			log.Logger.Tracef("产品名:%s", request.Payload.ProductName)
+			if strings.Contains(request.Payload.ProductName, "模型车数据") {
+				//result, err := CalcResult(decrypt)
+				//if err != nil {
+				//	log.Logger.Errorf("CalcResult error:%s", err.Error())
+				//
+				//}
+				return &protocol.HttpCalcResponse{
+					Cmd:      protocol.CalcRet,
+					RetCode:  protocol.FSuccessCode,
+					ErrorMsg: "",
+					Payload: protocol.HttpCalcResponsePayload{
+						ID:       request.Payload.ID,
+						HaveData: false,
+						Data:     nil,
+						Url:      url,
+					},
+				}, nil
+			}
 			return &protocol.HttpCalcResponse{
 				Cmd:      protocol.CalcRet,
 				RetCode:  protocol.FSuccessCode,
@@ -101,6 +121,7 @@ func NeedDouble(request *protocol.HttpCalcRequest) (*protocol.HttpCalcResponse, 
 					HaveData: false,
 					Data:     nil,
 					Url:      url,
+					//Ca
 				},
 			}, nil
 		} else {

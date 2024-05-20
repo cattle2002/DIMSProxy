@@ -61,9 +61,10 @@ func Encrypt(req protocol.HttpOfflineEncryptReq) {
 		return
 	}
 	if req.Encryption == "customize" {
-		log.Logger.Infof("offline product cus key:%v", req.Password)
+		toString := hex.EncodeToString([]byte("0000000000000000"))
 
-		encrypt, err := Encryptx(nil, req.FileUrl, "cus", req.Password)
+		encrypt, err := Encryptx(nil, req.FileUrl, "cus", toString)
+		//encrypt, err := Encryptx(nil, req.FileUrl, "cus", req.Password)
 		if err != nil {
 			log.Logger.Errorf("customize key encrypt error:%s", err.Error())
 			encryptError := serviceEncryptError(err.Error())

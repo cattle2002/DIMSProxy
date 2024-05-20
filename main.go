@@ -36,7 +36,6 @@ func ctrlc() {
 	for {
 		c := make(chan os.Signal, 1)
 		signal.Notify(c, os.Interrupt, os.Kill)
-
 		<-c
 		log.Logger.Info("Ctrl +C")
 		if handle.WsConn == nil {
@@ -90,6 +89,7 @@ func main() {
 	//go proxy.Run()
 	go ctrlc()
 	go func() {
+
 		http.ListenAndServe("localhost:6060", nil)
 	}()
 	////go handle.WsSend()

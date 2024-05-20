@@ -69,7 +69,7 @@ func loopReader() {
 			fhandle.Encrypt(offencReq)
 		}
 		if cmd == protocol.AlgoList {
-			fhandle.AlgoList()
+			fhandle.AlgoListX()
 		}
 		if cmd == protocol.AlgoRegister {
 			fhandle.AlgoRegister()

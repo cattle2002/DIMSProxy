@@ -11,9 +11,9 @@
  "Local": {
   "Host": "127.0.0.1",
   "EthHost": "127.0.0.1",
-  "Port": 5517,
-  "User": "admin",
-  "Password": "admin123",
+  "Port": 5527,
+  "User": "gongzhaowei",
+  "Password": "gongzhaowei",
   "CurrentDir": "D:\\workdir\\DIMSProxy",
   "IDentity": "Master",
   "LoggerLevel": "trace",

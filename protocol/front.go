@@ -20,6 +20,7 @@ type HttpCalcResponsePayload struct {
 	HaveData bool   `json:"HaveData"`
 	Data     []byte `json:"Data"`
 	Url      string `json:"Url"`
+	//CalcResult string `json:"CalcResult"`
 }
 type HttpCalcResponse struct {
 	Cmd      string                  `json:"Cmd"`

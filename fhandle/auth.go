@@ -14,6 +14,7 @@ import (
 	"encoding/hex"
 	"errors"
 	"fmt"
+	"github.com/cattle2002/easycrypto/ecrypto"
 	"time"
 )
 
@@ -77,12 +78,12 @@ func CalcPlusPermission(request *protocol.HttpCalcRequest) (*protocol.HttpCalcRe
 		if err != nil {
 			return nil, err
 		}
+		//request.Payload.Ci
+		decrypt, err := ecrypto.AesDecrypt(plus, []byte("0000000000000000"), []byte("0000000000000000"))
+		if err != nil {
+			return nil, err
+		}
 
-		//decrypt, err := ecrypto.AesDecrypt(plus, []byte("0000000000000000"), []byte("0000000000000000"))
-		//if err != nil {
-		//	return nil, err
-		//}
-		decrypt := plus
 		err = file.UploadBinary(context.Background(), config.Conf.Minio.ProductUpload, request.Payload.ProductName, bytes.NewReader(decrypt), int64(len(decrypt)))
 		if err != nil {
 			return nil, err
