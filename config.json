@@ -16,7 +16,7 @@
   "CurrentDir": "D:\\workdir\\DIMSProxy",
   "Version": "Monitor@v20231203",
   "ManagerServicePort": 5520,
-  "EthHost": "10.7.40.211",
+  "EthHost": "11.11.1.2",
   "LoggerLevel": "trace",
   "NoConsole": false
  },

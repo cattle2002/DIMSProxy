@@ -15,7 +15,7 @@
   "User": "gongzhaowei",
   "Password": "gongzhaowei",
   "CurrentDir": "D:\\workdir\\DIMSProxy",
-  "IDentity": "Master",
+  "IDentity": "",
   "LoggerLevel": "trace",
   "NoConsole": false
  }
